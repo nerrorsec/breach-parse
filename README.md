@@ -14,3 +14,8 @@ Run `./breach-parse.sh` for instructions
 ### To-Do (Future improvements)
 
 Create auto-installer for alias
+
+
+### Wordlist
+
+    cat wordlist.txt | sed 's/:/ /g' | awk '{ print $1 }' >> wordlist_users.txt && cat demo_wordlist.txt | sed 's/:/ /g' | awk '{ print $2 }' >> wordlist_passes.txt
